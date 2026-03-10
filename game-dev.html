@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asfa Tariq - Marshmallow Labyrinth</title>
+  <link rel="icon" type="image/png" href="images/icon.png"/>
+  <link rel="stylesheet" href="project.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <section>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-dot"></span>
+          <span class="logo-text">
+            Asfa Tariq<span class="logo-accent">.</span>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certifications</a>
+          <a href="contact-us.html" class="pill">Contact</a>
+        </div>
+
+        <button class="menu" id="menuBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+
+      <!-- Mobile Drawer -->
+      <div class="drawer" id="drawer">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certifications</a>
+          <a href="contact-us.html" class="pill">Contact</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="image-section">
+    <div class="container image-content">
+
+      <div class="left-image">
+          <img src="images/Project 3.png" alt="Project Image" data-aos="fade-up">
+      </div>
+
+      <div class="right-text">
+        <h2 data-aos="fade-right" data-aos-delay="100">Marshmallow Labyrinth</h2>
+        <h3 data-aos="fade-right" data-aos-delay="200">2D Maze Adventure Game Development</h3>
+        <h4 data-aos="fade-right" data-aos-delay="300">Abstract</h4>
+
+        <p data-aos="fade-right" data-aos-delay="400">
+          Marshmallow Labyrinth is a 2D maze-based adventure game that combines exploration,
+          item collection, and combat mechanics within a visually engaging candy-themed
+          environment.
+        </p>
+
+        <p data-aos="fade-right" data-aos-delay="500">
+          The project demonstrates core game development skills including player movement,
+          enemy behavior, collision systems, shooting mechanics, UI integration, and level design.
+        </p>
+
+        <a href="https://asfa-tariq.itch.io/marshmallow-labyrinth" target="_blank" class="visit-btn" data-aos="fade-right" data-aos-delay="600">
+          <i class="fas fa-arrow-up-right-from-square"></i> Play the Game
+        </a>
+
+        <a href="https://youtu.be/eMo4BCcjI6w" target="_blank" class="visit-btn" data-aos="fade-right" data-aos-delay="600">
+          <i class="fa fa-gamepad"></i> Watch Full Walkthrough
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FLOWCHART SECTION ================= -->
+
+  <section class="flowchart-section">
+
+    <div class="flowchart-container container">
+
+      <!-- LEFT TEXT -->
+      <div class="flowchart-text right-text">
+
+        <h4  data-aos="fade-right">Game Logic Flowchart</h4>
+
+        <p data-aos="fade-right" data-aos-delay="100">
+          The gameplay flow of Marshmallow Labyrinth follows a structured progression that guides
+          the player from the main menu to level completion. The player begins by selecting the
+          game from the main menu and enters the labyrinth where the primary objective is to
+          explore the maze and collect all Ginger Bears before reaching the exit.
+        </p>
+
+        <p data-aos="fade-right" data-aos-delay="200">
+          During gameplay, the player must avoid or shoot enemies while navigating through the
+          maze. Each collision with the enemy reduces the player's health and restarts the level.
+          Only after collecting every Ginger Bear can the player successfully exit the maze and
+          progress to the next level.
+        </p>
+
+        <p data-aos="fade-right" data-aos-delay="300">
+          As levels increase, the labyrinth becomes larger, enemies become more challenging, and
+          the number of collectibles increases. This flowchart visually represents the logical
+          sequence of the gameplay process including player actions, decision points, enemy
+          interactions, and level progression.
+        </p>
+
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="flowchart-image" data-aos="fade-pop" data-aos-delay="400">
+        <img src="images/game flowchart.png" alt="Marshmallow Labyrinth Flowchart">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="container">
+      <div class="right-text" > <br><br>
+      <h4 data-aos="fade-right" data-aos-delay="300">Game Wireframes & UI Prototypes</h4>
+
+      <p data-aos="fade-right" data-aos-delay="100">
+        Before implementing the final gameplay mechanics, several wireframes were designed to
+        visualize the layout of the game's user interface and gameplay screens. These early
+        prototypes helped in defining the structure of the main menu, gameplay HUD, level
+        navigation system, and audio controls.
+      </p>
+
+      <p data-aos="fade-right" data-aos-delay="200">
+        The wireframes ensured that essential UI elements such as player health, collectible
+        counters, level indicators, and pause controls were placed clearly for the player.
+        By planning these layouts early in the development process, the game interface
+        became easier to implement and more intuitive for players.
+      </p>
+
+      <p data-aos="fade-right" data-aos-delay="300">
+        The following wireframes illustrate the initial structure of the main game screens
+        including the Main Menu, Gameplay Interface, Level Menu, Audio Manager, and the
+        Game Over and Game Won screens.
+      </p>
+      </div>
+    <div class="container">
+
+      <div class="slider-container">
+        
+
+        <!-- LEFT ARROW -->
+        <button class="slider-btn prev">&#10094;</button>
+
+        <!-- WRAPPER (hides overflow only for slides) -->
+        <div class="slides-wrapper">
+
+          <div class="slides">
+
+            <!-- ================= SLIDE 1 ================= -->
+            <div class="slide">
+
+              <div class="card">
+                <img src="images/Main Menu.png" alt="Main Menu Screen">
+                <h4>1. Main Menu Screen</h4>
+              </div>
+
+              <div class="card">
+                <img src="images/Main Game Screen.png" alt="Main Game">
+                <h4>2. Main Game Screen</h4>
+              </div>
+
+            </div>
+
+            <!-- ================= SLIDE 2 ================= -->
+            <div class="slide">
+
+              <div class="card">
+                <img src="images/Level Menu.png" alt="Level Menu">
+                <h4>3. Level Menu Screen</h4>
+              </div>
+
+              <div class="card">
+                <img src="images/Audio Manager.png" alt="Audio Manager">
+                <h4>4. Audio Manager Screen</h4>
+              </div>
+
+            </div>
+
+            <!-- ================= SLIDE 2 ================= -->
+            <div class="slide">
+
+              <div class="card">
+                <img src="images/Game Won.png" alt="Game Won">
+                <h4>5. Game Won Screen</h4>
+              </div>
+
+              <div class="card">
+                <img src="images/Game Over.png" alt="Game Over">
+                <h4>6. Game Over Screen</h4>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT ARROW -->
+        <button class="slider-btn next">&#10095;</button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="right-text" > <br><br>
+      <h4 data-aos="fade-right" data-aos-delay="300">Gameplay Mechanics</h4>
+
+      <p data-aos="fade-right" data-aos-delay="100">
+        The gameplay of Marshmallow Labyrinth is built around exploration, strategy, and interaction with different game elements 
+        inside a maze-based environment. Players must navigate through the labyrinth, avoid or defeat enemies, and collect important
+        items in order to progress through each level. The mechanics are designed to create a balance between exploration and 
+        challenge while maintaining a clear objective for the player.
+      </p><br>
+
+    <!-- Block 1 -->
+    <div class="case-block reveal">
+      <div class="right-text">
+      <p data-aos="fade-right" data-aos-delay="200">
+        <b style="color: #3b82f6;">Player Movement</b>
+        <br>
+        The player controls a marshmallow character that moves through the labyrinth using the Arrow Keys or WASD keys. These 
+        controls allow the player to navigate different paths in the maze while exploring hidden passages and locating collectibles. 
+        Smooth movement and directional animations help the player clearly understand the direction of movement and maintain control 
+        while navigating through complex maze layouts.
+      </p>
+      </div>
+      <div class="case-image">
+        <img src="images/Player movement.png" alt="player movement">
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Block 2 -->
+    <div class="case-block reverse reveal">
+      <div class="case-text">
+      <p data-aos="fade-right" data-aos-delay="300"> 
+        <b style="color: #3b82f6;">Enemy System</b><br>
+        The game includes enemies represented as vending machines that patrol different areas of the labyrinth. These enemies 
+        follow specific movement patterns such as horizontal movement, jumping, or following the player within defined boundaries. 
+        If the player collides with an enemy, one health point is lost and the player is reset to the starting position. The player 
+        has three health points, and losing all health results in a game over.
+        <br>
+      </p>
+      </div>
+      <div class="case-image">
+        <img src="images/Enemy system.png" alt="Enemy system">
+      </div>
+    </div>
+    <br>
+      <p data-aos="fade-right" data-aos-delay="400">
+        <b style="color: #3b82f6;">Collecting Items</b><br>
+          While exploring the maze, the player must collect Ginger Bears and coins scattered throughout the level. Ginger Bears are 
+          the primary collectible and must all be gathered before the player can exit the level. This mechanic encourages players 
+          to explore the entire maze instead of moving directly toward the exit. Coins add additional rewards and make exploration 
+          more engaging.
+        <br>
+      </p>
+
+      <p data-aos="fade-right" data-aos-delay="500">
+        <b style="color: #3b82f6;">Level Progression</b> <br>
+          The game contains four progressively challenging levels. Each level increases in difficulty by introducing larger maze 
+          layouts, more collectibles, and more complex enemy movement patterns. Early levels help the player understand the core 
+          mechanics, while later levels test the player’s navigation skills, strategy, and ability to manage enemy interactions 
+          while collecting all required items.
+        <br>
+      </p>
+    </div>
+
+
+    </section>
+  </section>
+  
+    <section class="container">
+    <div class="right-text" > <br><br>
+      <h4 data-aos="fade-right" data-aos-delay="300">Design & Development</h4>
+
+      <p data-aos="fade-right" data-aos-delay="100">
+        The design and development of Marshmallow Labyrinth focused on creating a visually engaging environment while maintaining 
+        clear gameplay mechanics and player accessibility. The game combines creative visual design with structured level planning 
+        to deliver an immersive maze exploration experience. Each visual and gameplay element was carefully designed to support the 
+        overall theme and gameplay objectives.
+      </p>
+
+      <!-- Block 1 -->
+      <div class="case-block reveal">
+        <div class="right-text">
+        <p data-aos="fade-right" data-aos-delay="200">
+          <b style="color: #3b82f6;">Character / Enemy Design</b>
+          <br>
+            The main character of the game is a marshmallow, chosen to match the candy-themed environment of the labyrinth. The 
+            character is designed to be simple, recognizable, and easy to distinguish from enemies and collectible items. The player 
+            character includes directional animations that change based on movement, helping the player clearly understand the 
+            character’s orientation while navigating through the maze. In contrast, the enemy characters are represented as vending 
+            machines that patrol different areas of the labyrinth. These enemies follow specific movement patterns such as horizontal 
+            movement, jumping, or tracking the player within defined boundaries. Their unpredictable movement adds challenge to the 
+            gameplay and requires players to carefully navigate the maze while avoiding or attacking the enemy.  
+        </p>
+        </div>
+        <div class="case-image">
+          <img src="images/character design.png" alt="character design">
+        </div>
+      </div>
+
+      <div class="case-block reverse reveal">
+        <div class="case-text">
+        <p data-aos="fade-right" data-aos-delay="200">
+        <b style="color: #3b82f6;">Maze Design</b><br>
+          The labyrinth environment is inspired by a Candy Land theme, where the walls and surroundings include various sweet-themed 
+          elements such as cakes, gingerbread houses, moon cakes, baklava, and candies. The ground uses a wafer-like pattern to 
+          further reinforce the candy environment. These visual elements make the maze more engaging and visually appealing while 
+          still maintaining clear pathways for navigation.
+        </div>
+        <div class="case-image">
+          <img src="images/Maze design.png" alt="maze design">
+        </div>
+      </div>
+
+      <div class="case-block reveal">
+        <div class="case-text">
+        <p data-aos="fade-right" data-aos-delay="400">
+        <b style="color: #3b82f6;">Level Design</b><br>
+          The game consists of four levels, each designed with increasing complexity and difficulty. Early levels introduce the 
+          player to the core mechanics of movement, exploration, and item collection. As the player progresses, the maze becomes 
+          larger and more complex, enemies become more challenging, and the number of collectibles increases. This gradual increase 
+          in difficulty ensures that players can learn the game mechanics while still being challenged in later stages.
+        <br>
+      </p>
+        </div>
+        <div class="case-image">
+          <img src="images/Level Design.png" alt="level design">
+        </div>
+      </div>
+
+      <div class="case-block reverse reveal">
+        <div class="case-text">
+        <p data-aos="fade-right" data-aos-delay="200">
+        <b style="color: #3b82f6;">Audio System</b><br>
+          Audio plays an important role in enhancing the gameplay experience. The game includes background music as well as sound 
+          effects for actions such as collecting coins, collecting Ginger Bears, winning a level, and losing the game. An audio 
+          manager system was implemented to control the playback of music and sound effects, allowing the player to adjust the 
+          volume according to their preferences through the settings menu.
+        </div>
+        <div class="case-image">
+          <img src="images/Audio-manager.png" alt="audio manager">
+        </div>
+      </div>
+
+    </div>
+  </section>   
+
+  <section class="tech-section">
+
+    <div class="container">
+
+      <div class="right-text"><br><br>
+        <h4>Key Features and Functional Highlights</h4>
+        <p>
+          The technical implementation of Marshmallow Labyrinth focuses on building interactive
+          gameplay systems using scripting to control player actions, enemy behavior,
+          item collection, and audio management.
+        </p> <br>
+      </div>  
+
+      <div class="tech-grid">
+
+      <!-- Enemy Controller -->
+        <div class="tech-card">
+
+          <h3>Enemy Controller Script</h3>
+
+          <p>
+          The enemy controller manages vending machine enemies that patrol the maze.
+          A mathematical oscillation function allows the enemy to move continuously
+          between boundaries, creating unpredictable movement patterns.
+          </p>
+
+          <pre><code>
+          void Update()
+          {
+              movement.y = Mathf.PingPong(Time.time * EnemySpeed, 8) - 4;
+              movement.x = 0;
+          }
+          </code></pre>
+
+        </div>
+
+      <!-- Player Shooting -->
+      <div class="tech-card">
+
+        <h3>Player Shooting System</h3>
+
+        <p>
+        The shooting system allows the player to fire projectiles in four directions
+        based on the player's movement direction using a switch statement.
+        </p>
+
+        <pre><code>
+        switch (currentDirection)
+        {
+        case Direction.Right:
+          currentFirePoint = FirePointRight;
+          currentBullet = BulletRight;
+          break;
+        }
+        </code></pre>
+
+      </div>
+
+      <!-- Ginger Bear Logic -->
+      <div class="tech-card">
+
+        <h3>Ginger Bear Collection Logic</h3>
+
+        <p>
+        Players must collect all Ginger Bears before exiting the level.
+        A message appears if the player reaches the exit without collecting
+        every item.
+        </p>
+
+        <pre><code>
+        public void DisplayMessage(string message,
+        float duration)
+        {
+        messageText.text = message;
+        Invoke(nameof(ClearMessage), duration);
+        }
+        </code></pre>
+
+      </div>
+
+      <!-- Audio Manager -->
+      <div class="tech-card">
+
+        <h3>Audio Manager</h3>
+
+        <p>
+        The audio manager controls background music and sound effects,
+        ensuring continuous looping music during gameplay.
+        </p>
+
+        <pre><code>
+        public void PlayMusic(AudioClip clip)
+        {
+        musicSource.clip = clip;
+        musicSource.loop = true;
+        musicSource.Play();
+        }
+        </code></pre>
+
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section><br>
+    <div class="container">
+
+      <div class="right-text">
+        <h4>Reflection & Future Improvements</h4>
+        <p>
+          Developing Marshmallow Labyrinth was a valuable learning experience that allowed me to explore different aspects of game 
+          design and programming. Through this project, I gained practical experience in implementing gameplay mechanics, designing 
+          user interfaces, and debugging issues that occurred during development. Working through the process of testing and 
+          refining the game helped improve my problem-solving skills and understanding of how different systems interact within a 
+          game environment. 
+          <br><br>
+          One of the most rewarding aspects of the project was combining multiple gameplay elements such as maze exploration, item 
+          collection, enemy interaction, and player combat into a single cohesive experience. The testing phase also provided 
+          important insights into player behavior and game difficulty, which helped improve the gameplay balance.
+          <br><br>
+          In the future, several improvements could enhance the game further. Additional enemy types with different behaviors could 
+          be introduced to create more dynamic challenges. More levels could be added with increasingly complex maze layouts and 
+          obstacles. The combat system could also be improved by introducing enemy attacks or more advanced player abilities. These 
+          enhancements would expand the gameplay experience and provide players with greater variety and challenge.
+          </p>
+      </div>
+    </div>  
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-heading">
+        <h3>Connect With Me</h3>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://github.com/ASFA-TARIQ" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@asfatariq3099" target="_blank" class="social-link">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/asfa-tariq/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="mailto:asfatariq123@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Cursor -->
+  <div class="cursor-core" id="cursorCore"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    const slider = document.querySelector(".slides");
+const slideItems = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let index = 0;
+
+function updateSlider(){
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  index = (index + 1) % slideItems.length;
+  updateSlider();
+});
+
+prevBtn.addEventListener("click", () => {
+  index = (index - 1 + slideItems.length) % slideItems.length;
+  updateSlider();
+});
+
+/* Auto slide every 5 sec */
+setInterval(() => {
+  index = (index + 1) % slideItems.length;
+  updateSlider();
+}, 5000);
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asfa Tariq - Data-Driven Application</title>
+  <link rel="icon" type="image/png" href="images/icon.png"/>
+  <link rel="stylesheet" href="project.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <section>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-dot"></span>
+          <span class="logo-text">
+            Asfa Tariq<span class="logo-accent">.</span>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certifications</a>
+          <a href="contact-us.html" class="pill">Contact</a>
+        </div>
+
+        <button class="menu" id="menuBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+
+      <!-- Mobile Drawer -->
+      <div class="drawer" id="drawer">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certifications</a>
+          <a href="contact-us.html" class="pill">Contact</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= IMAGE WITH TEXT SECTION ================= -->
+  <section class="image-section">
+    <div class="container image-content">
+
+      <div class="left-image">
+        <img src="images/Project 5.png" alt="Project Image" data-aos="zoom-in" data-aos-delay="400">
+      </div>
+
+      <div class="right-text" >
+        <h2 data-aos="fade-right" data-aos-delay="100">Data-Driven Application</h2>
+        <h3 data-aos="fade-right" data-aos-delay="200">A Python-Based Data-Driven Application for Analyzing and Visualizing Complex Datasets </h3>
+        <h4 data-aos="fade-right" data-aos-delay="300">Project Overview</h4>
+
+        <p data-aos="fade-right" data-aos-delay="400">
+            The Harry Potter Data-Driven Application is an interactive desktop application developed using Python and Tkinter that 
+            allows users to explore information from the Harry Potter universe through a structured graphical interface. The 
+            application integrates with the PotterDB API to dynamically retrieve data related to characters, movies, books, potions, 
+            and spells. Users can browse or search for information within each category and view detailed descriptions, images, and 
+            related resources.
+        </p>  
+        <p data-aos="fade-right" data-aos-delay="500"> 
+            The application was designed with an immersive theme inspired by the Hogwarts universe, including themed visuals, 
+            background images, and background music to enhance the overall user experience. By combining API integration with an 
+            intuitive graphical user interface, the application demonstrates the use of data-driven programming, asynchronous 
+            requests, and interactive UI design.
+        </p>
+        <a href="https://youtu.be/l99YibheKLM" target="_blank" class="visit-btn" data-aos="fade-right" data-aos-delay="600">
+        <i class="fa-solid fa-circle-play"></i> Watch Demo Video
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+    <section class="container">
+    <div class="right-text">
+
+        <h4 data-aos="fade-right" data-aos-delay="100">
+            <i class="fa-solid fa-sparkles"></i> Key Features
+        </h4><br><br>
+    </div>
+
+    <div class="features-container">
+
+        <!-- Feature 1 -->
+        <div class="feature-box" data-aos="fade-right" data-aos-delay="300">
+        <div class="icon">
+            <i class="fa-solid fa-hat-wizard"></i>
+        </div>
+
+        <h3>Category Exploration</h3>
+
+        <p>
+            Explore multiple Harry Potter universe categories including
+            <strong>Characters, Movies, Books, Potions, and Spells</strong>.
+            All information is dynamically retrieved from the PotterDB API.
+        </p>
+
+        <ul>
+            <li>Characters</li>
+            <li>Movies</li>
+            <li>Books</li>
+            <li>Potions</li>
+            <li>Spells</li>
+        </ul>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-box" data-aos="fade-right" data-aos-delay="400">
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <h3>Character Search & Filtering</h3>
+
+        <p>Easily find characters using powerful search tools.</p>
+
+        <ul>
+            <li>Search characters by name</li>
+            <li>Filter by Hogwarts house</li>
+            <li>View detailed character information</li>
+            <li>Birth details, titles, blood status & wand info</li>
+        </ul>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-box" data-aos="fade-right" data-aos-delay="500">
+        <div class="icon">
+            <i class="fa-solid fa-film"></i>
+        </div>
+
+        <h3>Interactive Media Experience</h3>
+
+        <p>The application creates an immersive multimedia experience.</p>
+
+        <ul>
+            <li>Background theme music using <strong>Pygame</strong></li>
+            <li>Character & movie images from the API</li>
+            <li>Direct links to trailers and wiki pages</li>
+        </ul>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-box" data-aos="fade-right" data-aos-delay="600">
+        <div class="icon">
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+
+        <h3>Optimized Data Loading</h3>
+
+        <p>Large datasets are handled efficiently.</p>
+
+        <ul>
+            <li>Async API requests with <strong>aiohttp</strong></li>
+            <li>Pagination for large character lists</li>
+            <li>Smooth browsing experience</li>
+        </ul>
+        </div>
+
+    </div>
+
+    </section>
+
+  <section class="technology-section" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
+
+      <div class="technology-content"><br>
+
+      <div class="right-text">
+        <h4 data-aos="fade-right" data-aos-delay="100">
+          Technology Used
+        </h4>
+
+        <p data-aos="fade-right" data-aos-delay="400">
+          The application was developed using modern Python libraries and technologies to ensure efficient data handling,
+          smooth user interaction, and dynamic API integration.
+        </p>
+        </div>
+
+        <div class="technology-grid" data-aos="fade-right" data-aos-delay="500">
+
+          <div class="technology-item">
+            <span class="technology-dot"></span>
+            Python Programming
+          </div>
+
+          <div class="technology-item">
+            <span class="technology-dot"></span>
+            Tkinter for GUI Development
+          </div>
+
+          <div class="technology-item">
+            <span class="technology-dot"></span>
+            PotterDB API Integration
+          </div>
+
+          <div class="technology-item">
+            <span class="technology-dot"></span>
+            aiohttp for Asynchronous Requests
+          </div>
+
+          <div class="technology-item">
+            <span class="technology-dot"></span>
+            Pygame for Background Music
+          </div>
+
+          <div class="technology-item">
+            <span class="technology-dot"></span>
+            Pillow for Image Processing
+          </div>
+
+        </div>
+
+        <p class="technology-outro" data-aos="fade-right" data-aos-delay="600">
+          These technologies work together to create a responsive, interactive, and data-driven application.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FLOWCHART SECTION ================= -->
+    <div class="container">
+        <div class="right-text">
+            <h4 data-aos="fade-right" data-aos-delay="100">
+                Flowchart
+            </h4>
+            <p data-aos="fade-right" data-aos-delay="400">
+                The flowchart illustrates the overall workflow of the Harry Potter Data-Driven Application. It begins with the Start 
+                Window, where users can either start the application or view instructions. After starting, users are directed to the 
+                Category Selection Window, where they can choose to explore characters, movies, books, potions, or spells. Each selected 
+                category opens its respective window, allowing users to search, browse, and view detailed information retrieved from the 
+                API. Users can navigate between different sections using back buttons, and the process continues until the user exits 
+                the application. The flowchart helps visualize the logical sequence of user interactions and system responses throughout 
+                the application.
+            </p>
+        </div>
+    </div>
+    <div class="design-images">
+        <div class="design-card">
+            <img src="images/harry potter flowchart.png" alt="Low Fidelity Wireframe" data-aos="zoom-in" data-aos-delay="400">
+        </div>
+    </div>
+
+  <section class="container">
+      <div class="right-text">
+          <h4 data-aos="fade-right" data-aos-delay="100">
+              Wireframe
+          </h4>
+          <p data-aos="fade-right" data-aos-delay="400"   >
+              The wireframe represents the basic layout and structure of the application before development. It was used to plan 
+              the placement of key interface elements such as navigation buttons, search bars, content areas, and images for each 
+              window including the start menu, category selection, and detail pages. The wireframes helped visualize the user 
+              flow and ensured that the interface would be clear, organized, and easy to navigate before implementing the actual 
+              design and functionality.
+          </p>
+      </div>
+    <div class="container">
+      <div class="slider-container">
+
+        <!-- LEFT ARROW -->
+        <button class="slider-btn prev">&#10094;</button>
+
+        <!-- WRAPPER (hides overflow only for slides) -->
+        <div class="slides-wrapper">
+
+          <div class="slides">
+
+            <!-- ================= SLIDE 1 ================= -->
+            <div class="slide">
+
+              <div class="card">
+                <img src="images/Start Window.png" alt="Start window" data-aos="zoom-in" data-aos-delay="400">
+                <h4>1. Start Window</h4>
+              </div>
+
+              <div class="card">
+                <img src="images/Select Category window.png" alt="Select Category window" data-aos="zoom-in" data-aos-delay="400">
+                <h4>2. Category Selection Window</h4>
+              </div>
+
+            </div>
+
+            <!-- ================= SLIDE 2 ================= -->
+            <div class="slide">
+
+              <div class="card">
+                <img src="images/Characters main window.png" alt="Characters main window" data-aos="zoom-in" data-aos-delay="500">
+                <h4>3. Characters Main Window</h4>
+              </div>
+
+              <div class="card">
+                <img src="images/Characters detail window.png" alt="Characters detail window" data-aos="zoom-in" data-aos-delay="500">
+                <h4>4. Characters Detail Window</h4>
+              </div>
+
+            </div>
+
+            <!-- ================= SLIDE 3 ================= -->
+            <div class="slide">
+
+              <div class="card">
+                <img src="images/Movies main window.png" alt="Movies main window" data-aos="zoom-in" data-aos-delay="600">
+                <h4>5. Movies Main Window</h4>
+              </div>
+
+              <div class="card">
+                <img src="images/Movies detail window.png" alt="Movies detail window" data-aos="zoom-in" data-aos-delay="600">
+                <h4>6. Movies Detail Window</h4>
+              </div>
+
+            </div>
+
+            <!-- ================= SLIDE 4 ================= -->
+            <div class="slide">
+
+              <div class="card">
+                <img src="images/potions main window.png" alt="Potions main window" data-aos="zoom-in" data-aos-delay="700">
+                <h4>7. Potions Main Window</h4>
+              </div>
+
+              <div class="card">
+                <img src="images/potions detail window.png" alt="Potions detail window" data-aos="zoom-in" data-aos-delay="700">
+                <h4>8. Potions Detail Window</h4>
+              </div>
+
+            </div>
+
+            <!-- ================= SLIDE 5 ================= -->
+            <div class="slide">
+
+              <div class="card">
+                <img src="images/spells main window.png" alt="Spells main window" data-aos="zoom-in" data-aos-delay="800">
+                <h4>9. Spells Main Window</h4>
+              </div>
+
+              <div class="card">
+                <img src="images/spells detail window.png" alt="Spells detail window" data-aos="zoom-in" data-aos-delay="800">
+                <h4>10. Spells Detail Window</h4>
+              </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT ARROW -->
+        <button class="slider-btn next">&#10095;</button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="right-text"><br>
+        <h4 data-aos="fade-right" data-aos-delay="100">Project Plan</h4>
+        <p data-aos="fade-right" data-aos-delay="200">
+          For each page or window of the application, different frames were created in Tkinter, and the visual layout of these 
+          frames was first designed in Canva to maintain a consistent Harry Potter theme across the interface.  
+        </p>
+      </div> 
+      <div class="right-text">
+          <h4 data-aos="fade-right" data-aos-delay="400" style="color: rgb(112, 112, 229); font-size: 1.2em;">Start Window</h4>
+          <p data-aos="fade-right" data-aos-delay="500">
+            The start window was planned as the main menu of the application, providing users with options to start the program or 
+            view instructions. The layout was designed in Canva using a Harry Potter themed background along with a title styled in a 
+            Harry Potter inspired font. During development, the background image was integrated and two buttons—“Start Your Hogwarts 
+            Adventure” and “Instructions”—were added and aligned vertically for easy navigation. During testing, minor adjustments 
+            were made to the positioning of the buttons and interface elements to ensure proper alignment and usability.
+          </p>
+          <p><b>The final outcome</b></p>
+          <!-- Images -->
+          <div class="image-row">
+
+            <figure>
+              <img src="images/main menu tkinter.png" alt="Start Window Wireframe" data-aos="zoom-in" data-aos-delay="400">
+              <figcaption class="case-caption">Figure: Start window</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/instruction window tkinter.png" alt="Start Window Application" data-aos="zoom-in" data-aos-delay="400">
+              <figcaption class="case-caption">Figure: Instruction Window</figcaption>
+            </figure>
+
+          </div>
+      </div>
+
+      <div class="right-text">
+          <h4 data-aos="fade-right" data-aos-delay="400" style="color: rgb(112, 112, 229); font-size: 1.2em;">Category Selection Window</h4>
+          <p data-aos="fade-right" data-aos-delay="500">
+            This window was planned to allow users to choose which category of the Harry Potter universe they wanted to explore. The 
+            interface was designed in Canva with a Hogwarts castle background and themed category buttons. During development, five 
+            category buttons—Characters, Movies, Books, Potions, and Spells—were implemented and arranged across two rows, along with 
+            a back button to return to the main menu. During testing, small alignment and border issues around the buttons were 
+            corrected to ensure the window functioned smoothly.
+          </p>
+          <p><b>The final outcome</b></p>
+          <!-- Images -->
+          <div class="image-row">
+
+            <figure>
+              <img src="images/select category tkinter.png" alt="Category Selection Window" data-aos="zoom-in" data-aos-delay="400">
+              <figcaption class="case-caption">Figure : Category Selection Window</figcaption>
+            </figure>
+
+            <figure>
+
+            </figure>
+
+          </div>
+      </div>
+
+      <div class="right-text">
+          <h4 data-aos="fade-right" data-aos-delay="400" style="color: rgb(112, 112, 229); font-size: 1.2em;">Characters Window</h4>
+          <p data-aos="fade-right" data-aos-delay="500">
+            The characters window was planned to allow users to search for characters either by name or by Hogwarts house and view 
+            detailed character information. The frame was designed in Canva with a Hogwarts themed background and a styled title. 
+            During development, a search bar, a house selection dropdown menu, and a scrollable canvas displaying character names 
+            were implemented. When a character name is selected, a detail page opens displaying information such as birth details, 
+            house, titles, blood status, wand information, and a wiki link. Pagination buttons were also added to navigate through 
+            large lists of characters. During testing, issues related to slow loading and missing images were resolved by adding 
+            default images and implementing asynchronous API requests using aiohttp, which significantly improved performance.
+          </p>
+          <p><b>The final outcome</b></p>
+          <!-- Images -->
+          <div class="image-row">
+
+            <figure>
+              <img src="images/characters window tkinter.png" alt="Characters Window" data-aos="zoom-in" data-aos-delay="400">
+              <figcaption class="case-caption">Figure: Characters Window</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/characters detail window tkinter.png" alt="Characters Window Application" data-aos="zoom-in" data-aos-delay="400">
+              <figcaption class="case-caption">Figure: Characters detail Window </figcaption>
+            </figure>
+
+          </div>
+      </div> 
+      
+      <div class="right-text">
+          <h4 data-aos="fade-right" data-aos-delay="400" style="color: rgb(112, 112, 229); font-size: 1.2em;">Movies Window</h4>
+          <p data-aos="fade-right" data-aos-delay="500">
+            The movies window was planned to allow users to explore movie information and watch related trailers. The interface was 
+            designed in Canva with a Hogwarts themed background and a movie section title. During development, movie titles were 
+            displayed in a scrollable list, and selecting a movie shows detailed information including the poster, summary, release 
+            date, and buttons linking to the trailer and wiki page. A navigation button was also added to return to the category 
+            selection window. During testing, minor layout adjustments were made to properly align the buttons and scroll canvas.
+          </p>
+          <p><b>The final outcome</b></p>
+          <!-- Images -->
+          <div class="image-row">
+
+            <figure>
+              <img src="images/movies window tkinter.png" alt="Movies Window" data-aos="zoom-in" data-aos-delay="400">
+              <figcaption class="case-caption">Figure: Movies Window</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/movies detail window tkinter.png" alt="Movies Detail Window" data-aos="zoom-in" data-aos-delay="400">
+              <figcaption class="case-caption">Figure: Movies Detail Window</figcaption>
+            </figure>
+
+          </div>
+      </div>  
+
+      <div class="right-text">
+          <h4 data-aos="fade-right" data-aos-delay="400" style="color: rgb(112, 112, 229); font-size: 1.2em;">Books Window</h4>
+          <p data-aos="fade-right" data-aos-delay="500">
+            The books window was designed to allow users to browse Harry Potter books and view their details. The visual layout was 
+            created in Canva with themed imagery and styled headings. During development, a list of book titles was displayed in a 
+            canvas, and selecting a book opens a detail view containing information such as the author, release date, summary, and 
+            cover image. Navigation buttons were placed at the bottom of the frame to return to the books list or the category 
+            selection window. Testing mainly involved adjusting the positioning of frames and buttons to improve layout consistency.
+          </p>
+          <p><b>The final outcome</b></p>
+          <!-- Images -->
+          <div class="image-row">
+
+            <figure>
+              <img src="images/books window tkinter.png" alt="Books Window" data-aos="zoom-in" data-aos-delay="500">
+              <figcaption class="case-caption">Figure: Books Window</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/books detail window tkinter.png" alt="Books Detail Window" data-aos="zoom-in" data-aos-delay="500">
+              <figcaption class="case-caption">Figure: Books Detail Window</figcaption>
+            </figure>
+
+          </div>
+      </div>  
+
+      <div class="right-text">
+          <h4 data-aos="fade-right" data-aos-delay="400" style="color: rgb(112, 112, 229); font-size: 1.2em;">Potions Window</h4>
+          <p data-aos="fade-right" data-aos-delay="500">
+            The potions window was planned to allow users to search for potions either by name or by browsing a list. The frame 
+            design was created in Canva with themed visuals and headings. During development, a search bar and a scrollable list of 
+            potion names were implemented. When a potion is selected, detailed information including its characteristics, effects, 
+            difficulty level, ingredients, and image is displayed along with a link to the wiki page. During testing, minor layout 
+            changes were made and default images were added to handle cases where API images were unavailable.
+          </p>
+          <p><b>The final outcome</b></p>
+          <!-- Images -->
+          <div class="image-row">
+
+            <figure>
+              <img src="images/potions window tkinter.png" alt="Potions Window" data-aos="zoom-in" data-aos-delay="600">
+              <figcaption class="case-caption">Figure: Potions Window</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/potions detail window tkinter.png" alt="Potions Detail Window" data-aos="zoom-in" data-aos-delay="600">
+              <figcaption class="case-caption">Figure: Potions Detail Window</figcaption>
+            </figure>
+
+          </div>
+      </div> 
+
+      <div class="right-text">
+          <h4 data-aos="fade-right" data-aos-delay="400" style="color: rgb(112, 112, 229); font-size: 1.2em;">Spells Window</h4>
+          <p data-aos="fade-right" data-aos-delay="500">
+            The spells window was planned to allow users to search and explore spells from the Harry Potter universe. The layout was 
+            designed in Canva with a themed background and stylized text. During development, a search bar and a scrollable list of 
+            spell names were implemented, and selecting a spell displays detailed information including its category, effect, hand 
+            movement, light effect, and related wiki link. Navigation buttons were also added to return to previous windows. During 
+            testing, adjustments were made to element positioning and default images were added to prevent errors when certain API 
+            images were missing.
+          </p>
+          <p><b>The final outcome</b></p>
+          <!-- Images -->
+          <div class="image-row">
+
+            <figure>
+              <img src="images/spells window tkinter.png" alt="Spells Window" data-aos="zoom-in" data-aos-delay="700">
+              <figcaption class="case-caption">Figure: Spells Window</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/spells detail window tkinter.png" alt="Spells Detail Window" data-aos="zoom-in" data-aos-delay="700">
+              <figcaption class="case-caption">Figure: Spells Detail Window</figcaption>
+            </figure>
+
+          </div>
+      </div>  
+    </div>
+  </section>   
+
+  <section>
+    <div class="container">
+      <div class="right-text">
+        <h4 data-aos="fade-right">Critical Reflection</h4>
+        <p data-aos="fade-right" data-aos-delay="100">
+          Developing the Harry Potter Data-Driven Application was a valuable learning experience that strengthened my understanding of 
+          GUI development, API integration, and data handling in Python. One of the most interesting aspects of the project was designing 
+          the interface using Tkinter frames and creating the visual layouts in Canva before implementing them in the application. This 
+          planning approach helped me structure the user interface more effectively and maintain a consistent theme throughout the program. 
+          Integrating the PotterDB API also allowed me to work with real-world data and understand how applications dynamically retrieve 
+          and display information.
+        </p>
+        <p data-aos="fade-right" data-aos-delay="200">
+          During development, I encountered several challenges, particularly when loading large amounts of character data from the API. 
+          Initially, displaying all characters in a single scrollable list caused performance issues and slow loading times. To solve 
+          this, I implemented pagination and asynchronous API requests using aiohttp, which significantly improved the performance of the 
+          application. This process helped me better understand optimization techniques and the importance of efficient data fetching 
+          when working with large datasets.
+        </p>
+        <p data-aos="fade-right" data-aos-delay="300">
+          Overall, the project helped improve my problem-solving skills and provided practical experience in combining interface 
+          design, API usage, and multimedia integration within a Python application. In the future, I would enhance the application 
+          further by adding additional user controls such as music volume settings, improved filtering options, and a more advanced 
+          search system to make the user experience even more interactive and customizable.
+        </p>
+      </div>
+    </div>
+  </section> 
+  
+
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-heading">
+        <h3>Connect With Me</h3>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://github.com/ASFA-TARIQ" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@asfatariq3099" target="_blank" class="social-link">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/asfa-tariq/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="mailto:asfatariq123@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Cursor -->
+  <div class="cursor-core" id="cursorCore"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+window.addEventListener('load', () => {
+  AOS.refresh();
+});
+    const slider = document.querySelector(".slides");
+const slideItems = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let index = 0;
+
+function updateSlider(){
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  index = (index + 1) % slideItems.length;
+  updateSlider();
+});
+
+prevBtn.addEventListener("click", () => {
+  index = (index - 1 + slideItems.length) % slideItems.length;
+  updateSlider();
+});
+
+/* Auto slide every 5 sec */
+setInterval(() => {
+  index = (index + 1) % slideItems.length;
+  updateSlider();
+}, 5000);
+  </script>
+</body>
+</html>

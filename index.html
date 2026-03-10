@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asfa Tariq - Portfolio</title>
+  <link rel="icon" type="image/png" href="images/icon.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Futuristic section -->
+  <section class="hero" id="hero">
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <nav class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo-dot"></span>
+          <span class="logo-text">
+            Asfa Tariq<span class="logo-accent">.</span>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certifications</a>
+          <a href="contact-us.html" >Contact</a>
+        </div>
+
+        <button class="menu" id="menuBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <div class="hero-inner">
+        <div class="left">
+          <h1 class="title">
+            Building <span class="glow">Modern</span> Systems <br/>
+            for the <span class="glow2">Future</span>
+          </h1>
+
+          <p class="subtitle">
+            I’m a student software developer with hands-on experience in <b>Web Development</b>,
+            <b>Mobile App Development</b>, <b>Game Development</b>, and <b>ERP Implementation</b>.
+            I build modern, reliable systems with clean UI, strong logic, and real-world workflows.
+          </p>
+
+          <div class="typing-wrap">
+            <span class="typing-label">Currently:</span>
+            <span class="typing" id="typing"></span>
+            <span class="caret" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="hero-image">
+
+            <!-- Orbit 1 -->
+            <div class="orbit orbit1">
+              <span class="dot"></span>
+            </div>
+
+            <!-- Orbit 2 -->
+            <div class="orbit orbit2">
+              <span class="dot"></span>
+            </div>
+
+            <!-- Orbit 3 -->
+            <div class="orbit orbit3">
+              <span class="dot"></span>
+            </div>
+
+            <!-- Image -->
+            <img src="images/portfolio image 1.png" alt="Developer">
+
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div class="drawer" id="drawer">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certifications</a>
+          <a href="contact-us.html" class="pill">Contact</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <div class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- LEFT: INTRO -->
+        <div class="about-left">
+          <h2 class="section-title" data-aos="fade-right">
+            Hi, I'm <span class="glow2">Asfa Tariq</span>
+          </h2>
+
+          <p class="about-text" data-aos="fade-right" data-aos-delay="100">
+              A student software developer who enjoys turning ideas into real, working products.
+            I build clean, modern interfaces and reliable systems — from <b>Web Development</b> and
+            <b>Mobile App Development</b> to <b>Game Development</b> and <b>ERP / Odoo Implementation</b>.
+          </p>
+
+          <p class="about-text" data-aos="fade-right" data-aos-delay="200">
+            I'm passionate about building solutions that don’t just look good, but also perform well.
+            I focus on writing structured code, creating smooth user experiences, and keeping everything
+            scalable and easy to maintain.
+          </p>
+
+          <p class="about-text" data-aos="fade-right" data-aos-delay="300">
+            I work confidently with <b>UI/UX</b>, <b>APIs</b>, <b>databases</b>, and <b>automation</b>,
+            and I enjoy solving problems like optimizing workflows, improving system accuracy, and building
+            features that make users' lives easier.
+          </p>
+
+          <p class="about-text"  data-aos="fade-right" data-aos-delay="400">
+            My goal is simple: keep learning, build meaningful projects, and grow into a developer who can
+            deliver high-quality products for real businesses and real users.
+          </p>
+          <a href="https://sway.cloud.microsoft/5sutyTh8jbfxNZAz?ref=Link&loc=play" target="_blank" class="visit-btn" data-aos="fade-right" data-aos-delay="600">
+            <i class="fas fa-arrow-up-right-from-square"></i> Digital storytelling Portfolio
+          </a>
+          <a href="https://sway.cloud.microsoft/f7UFUqjhVzWXQHZl?ref=Link&loc=play" target="_blank" class="visit-btn" data-aos="fade-right" data-aos-delay="600">
+              <i class="fas fa-arrow-up-right-from-square"></i> Creative Coding Portfolio
+          </a>
+        </div>
+
+        <!-- RIGHT: SKILLS (WRAPPED) -->
+        <div class="about-right">
+          <div class="about-card" data-aos="fade-pop" data-aos-delay="400">
+            <div class="about-card-glow"></div>
+
+            <div class="about-skill-head">
+              <span class="k">Skills</span>
+              <span class="v">Core Stack</span>
+            </div>
+
+              <!-- Frontend -->
+              <div class="about-skill" >
+                <div class="about-skill-top">
+                  <span class="about-skill-name">Frontend Development</span>
+                  <span class="about-skill-val">92%</span>
+                </div>
+                <div class="about-skill-track">
+                  <div class="about-skill-fill" data-level="92"></div>
+                </div>
+              </div>
+
+              <!-- Backend & ERP -->
+              <div class="about-skill">
+                <div class="about-skill-top">
+                  <span class="about-skill-name">Backend & ERP Systems</span>
+                  <span class="about-skill-val">85%</span>
+                </div>
+                <div class="about-skill-track">
+                  <div class="about-skill-fill" data-level="85"></div>
+                </div>
+              </div>
+
+              <!-- UI/UX -->
+              <div class="about-skill">
+                <div class="about-skill-top">
+                  <span class="about-skill-name">UI/UX Design</span>
+                  <span class="about-skill-val">88%</span>
+                </div>
+                <div class="about-skill-track">
+                  <div class="about-skill-fill" data-level="88"></div>
+                </div>
+              </div>
+
+              <!-- Game Development (Separate) -->
+              <div class="about-skill">
+                <div class="about-skill-top">
+                  <span class="about-skill-name">Game Development</span>
+                  <span class="about-skill-val">85%</span>
+                </div>
+                <div class="about-skill-track">
+                  <div class="about-skill-fill" data-level="85"></div>
+                </div>
+              </div>
+
+              <!-- Mobile Development -->
+              <div class="about-skill">
+                <div class="about-skill-top">
+                  <span class="about-skill-name">Mobile App Development</span>
+                  <span class="about-skill-val">85%</span>
+                </div>
+                <div class="about-skill-track">
+                  <div class="about-skill-fill" data-level="85"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+
+      <div class="projects-head">
+        <h2 class="section-title" data-aos="fade-right" data-aos-delay="400">
+          My <span class="glow2">Projects</span>
+        </h2>
+        <p class="projects-sub" data-aos="fade-right" data-aos-delay="600">
+          A few projects I’ve built — focused on UI, performance, and real-world systems.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Card 1 -->
+        <a href="service-order-module.html" class="project-link" data-aos="fade-up" data-aos-delay="100">
+          <article class="project-card">
+
+            <div class="project-thumb">
+              <img src="images/Project 1.png" alt="Project 1 preview">
+                <div class="view-overlay">
+                  <span class="view-text">
+                    <i class="fas fa-arrow-right"></i> View Project
+                  </span>
+                </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">ERP Service Orders Module</h3>
+
+              <p class="project-desc">
+                A rule-driven warehouse service billing system designed with controlled workflows,
+                strict validations, and a clean, intuitive UI. Built for real business operations,
+                it ensures accuracy, transparency, and structured service execution while
+                preventing manual errors and maintaining full audit reliability.
+              </p>
+
+              <div class="project-tags">
+                <span class="ptag" data-aos="fade-pop" data-aos-delay="100">Odoo</span>
+                <span class="ptag" data-aos="fade-pop" data-aos-delay="200">Python</span>
+                <span class="ptag" data-aos="fade-pop" data-aos-delay="300">ERP</span>
+                <span class="ptag" data-aos="fade-pop" data-aos-delay="400">Automation</span>
+              </div>
+            </div><br>
+
+          </article>
+        </a>
+
+        <!-- Card 2 -->
+      <a href="corporate Website.html" class="project-link" data-aos="fade-up" data-aos-delay="100">
+   
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/Project 2.png" alt="AAD Plus Website Preview">
+            <div class="view-overlay">
+                  <span class="view-text">
+                    <i class="fas fa-arrow-right"></i> View Project
+                  </span>
+                </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">AAD Plus Corporate Website</h3>
+            <p class="project-desc">
+              I designed and developed the official AAD Plus website with a modern,
+              responsive layout focused on performance, clean UI/UX, SEO optimization,
+              and strong brand presentation. The site reflects professionalism while
+              maintaining smooth interactions and structured content flow.
+            </p>
+
+            <div class="project-tags">
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="100">HTML</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="200">CSS</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="300">JavaScript</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="400">UI/UX</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="500">SEO</span>
+            </div>
+          </div><br>
+        </article>
+      </a>  
+      
+
+        <!-- Card 3 -->
+      <a href="game-dev.html" class="project-link" data-aos="fade-up" data-aos-delay="100">
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/Project 3.png" alt="Marshmallow Labyrinth preview">
+            <div class="view-overlay">
+                  <span class="view-text">
+                    <i class="fas fa-arrow-right"></i> View Project
+                  </span>
+                </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Marshmallow Labyrinth</h3>
+            <p class="project-desc">
+              A candy-themed 2D maze adventure where players explore vibrant labyrinths, collect hidden Ginger 
+              Bears, defeat dynamic enemies, and strategically escape increasingly challenging levels filled with obstacles and surprises.
+            </p>
+
+            <div class="project-tags">
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="100">Unity</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="200">C#</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="300">Game Design</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="400">Level Design</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="500">UI System</span>
+            </div>
+          </div>
+        </article>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="Culinary Odyssey.html" class="project-link" data-aos="fade-up" data-aos-delay="100">
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/Project 4.png" alt="Culinary Odyssey preview">
+            <div class="view-overlay">
+                  <span class="view-text">
+                    <i class="fas fa-arrow-right"></i> View Project
+                  </span>
+                </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Culinary Odyssey – Cultural Content Platform</h3>
+            <p class="project-desc">
+              A full-stack web application that unites recipes, traditions, and cultural storytelling 
+              within a structured REST API architecture. Featuring secure authentication, relational 
+              database design, user-controlled CRUD operations, and cloud-based media management, 
+              the platform preserves cultural heritage through scalable and maintainable system design.
+            </p>
+
+            <div class="project-tags">
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="100">Node.js</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="200">Express.js</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="300">PostgreSQL</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="400">REST API</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="500">Firebase Auth</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="600">Cloudinary</span>
+            </div>
+          </div>
+        </article>
+        </a>
+
+        <!-- Card 5-->
+        <a href="Data-Driven Application.html" class="project-link" data-aos="fade-up" data-aos-delay="100">
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/Project 5.png" alt="Harry Potter Data-Driven Application preview">
+            <div class="view-overlay">
+                  <span class="view-text">
+                    <i class="fas fa-arrow-right"></i> View Project
+                  </span>
+                </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Harry Potter Data-Driven Application</h3>
+            <p class="project-desc">
+              A Python-based data-driven application powered by the PotterDB API that allows users to explore the Harry Potter 
+              universe through an interactive GUI. The application features asynchronous data fetching, real-time filtering, 
+              pagination for large datasets, dynamic image rendering, and integrated background music to create an engaging 
+              user experience.
+            </p>
+
+          <div class="project-tags">
+            <span class="ptag" data-aos="fade-pop" data-aos-delay="100">Python</span>
+            <span class="ptag" data-aos="fade-pop" data-aos-delay="200">Tkinter</span>
+            <span class="ptag" data-aos="fade-pop" data-aos-delay="300">API Integration</span>
+            <span class="ptag" data-aos="fade-pop" data-aos-delay="400">Async Programming</span>
+            <span class="ptag" data-aos="fade-pop" data-aos-delay="500">aiohttp</span>
+            <span class="ptag" data-aos="fade-pop" data-aos-delay="600">GUI Application</span>
+            <span class="ptag" data-aos="fade-pop" data-aos-delay="700">Data-Driven App</span>
+          </div>
+          </div>
+        </article>
+        </a> 
+
+        <!-- Card 6 -->
+        <a href="mobile-app.html" class="project-link" data-aos="fade-up" data-aos-delay="100">
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/Project 6.png" alt="Mirror of Magic preview">
+            <div class="view-overlay">
+                  <span class="view-text">
+                    <i class="fas fa-arrow-right"></i> View Project
+                  </span>
+                </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Mirror of Magic – Android Personality App</h3>
+            <p class="project-desc">
+              An Android application developed in Android Studio implementing multi-activity 
+              navigation, user preference selection logic, and dynamic result rendering. 
+              The app integrates animated UI components, structured intent-based navigation, 
+              and conditional logic to generate personalized outcomes, delivering an engaging 
+              and responsive mobile user experience.
+            </p>
+
+            <div class="project-tags">
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="100">Android Studio</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="200">XML / Kotlin</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="300">UI/UX Design</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="400">Mobile App</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="500">Interactive Logic</span>
+            </div>
+          </div>
+        </article>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="non-linear-story.html" class="project-link" data-aos="fade-up" data-aos-delay="100">
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/Project 7.png" alt="Non-Linear Story preview">
+            <div class="view-overlay">
+                  <span class="view-text">
+                    <i class="fas fa-arrow-right"></i> View Project
+                  </span>
+                </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Metamorphosis – Interactive Story Experience</h3>
+            <p class="project-desc">
+              Metamorphosis is an interactive non-linear story created using Twine, where readers progress through the narrative by 
+              making choices that influence the direction of the story. Each decision leads to different paths and outcomes, allowing 
+              users to explore the story from multiple perspectives. The project focuses on interactive storytelling, combining narrative 
+              design with user-driven progression to create an engaging and immersive experience.
+            </p>
+
+            <div class="project-tags">
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="100">Twine</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="200">Interactive Storytelling</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="300">Choice-Based Story</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="400">Non-Linear Narrative</span>
+              <span class="ptag" data-aos="fade-pop" data-aos-delay="500">Digital Storytelling</span>
+            </div>
+          </div>
+        </article>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+
+<section class="certifications" id="certifications">
+  <div class="container">
+
+    <div class="projects-head">
+      <h2 class="section-title">
+        My <span class="glow2">Certifications</span>
+      </h2>
+    </div>
+
+    <div class="cert-slider-wrapper">
+
+      <!-- LEFT ARROW -->
+      <div class="swiper-button-prev"></div>
+
+      <div class="swiper certSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 1.jpeg">
+            <p>Certificate of participation in workshop "Build Intelligent Agents"</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 2.jpeg">
+            <p>Certificate of participation in workshop "Dream vs Reality: AI Battle"</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 3.jpeg">
+            <p>Intro to Machine Learning</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 4.jpeg">
+            <p>Introduction to Web APIs</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 5.jpeg">
+            <p>PostgreSQL Essential Training</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 6.jpeg">
+            <p>Certificate of Appreciation for industry challange</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 7.jpeg">
+            <p>Introduction to C#</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 8.jpeg">
+            <p>Python Intermediate</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 9.jpeg">
+            <p>Conquering Responsive Layouts</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 10.jpeg">
+            <p>Python Tkinter</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 11.jpeg">
+            <p>Introduction to HTML</p>
+          </div>
+          
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 12.jpeg">
+            <p>Introduction to CSS</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 13.jpeg">
+            <p>Introduction to Python</p>
+          </div>
+
+          <div class="swiper-slide cert-card">
+            <img src="images/certificate 14.jpeg">
+            <p>Introduction to JavaScript</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT ARROW -->
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <!-- PAGINATION OUTSIDE -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-heading">
+        <h3>Connect With Me</h3>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://github.com/ASFA-TARIQ" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@asfatariq3099" target="_blank" class="social-link">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/asfa-tariq/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="mailto:asfatariq123@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Custom Cursor
+  <div class="cursor"></div> -->
+
+  <!-- Cursor -->
+<div class="cursor-core" id="cursorCore"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+  
+</body>
+</html>
