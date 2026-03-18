@@ -223,6 +223,13 @@
     </div>
   </footer>
 
+    <div class="cursor-core" id="cursorCore"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
@@ -262,6 +269,24 @@
     popupClose.addEventListener("click", () => {
       popup.classList.remove("active");
     });
+
+      const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+
+  backToTop.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
   </script>
 
 </body>

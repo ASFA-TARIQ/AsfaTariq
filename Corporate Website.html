@@ -74,10 +74,12 @@
           a complete end-to-end project. This project highlights my ability to combine structured frontend development, clean and modern UI/UX design principles, 
           search engine optimization strategy, and technical deployment expertise into a fully functional and business-ready digital solution.
         </p>  
-        <p data-aos="fade-right" data-aos-delay="500"> 
-            Rather than simply creating a static website, the focus was on building a scalable and performance-driven corporate 
-            platform that aligns with real business objectives. Every section was strategically structured to present services 
-            clearly, establish trust with potential clients, and ensure smooth content flow across the entire site.
+        <p data-aos="fade-right" data-aos-delay="400">
+          The AAD Plus Corporate Website serves as the official digital platform representing the company’s services, expertise, 
+          and professional brand identity. The website was fully designed, developed, optimized, and successfully deployed by me as 
+          a complete end-to-end project. This project highlights my ability to combine structured frontend development, clean and modern UI/UX design principles, 
+          search engine optimization strategy, and technical deployment expertise into a fully functional and business-ready digital solution. 
+          I am currently working with the AAD Plus team to further improve the website through continuous enhancements in design, performance, usability, and digital strategy.
         </p>
         <a href="https://aadplus.com" target="_blank" class="visit-btn" data-aos="fade-right" data-aos-delay="600">
         <i class="fas fa-arrow-up-right-from-square"></i> Visit My Work
@@ -100,10 +102,10 @@
         <div class="role-grid">
 
             <!-- 1 -->
-            <div class="role-card">
+            <div class="role-card" data-aos="fade-right" data-aos-delay="300">
             <div class="role-title">
                 <span class="role-dot"></span>
-                <h5 data-aos="fade-right" data-aos-delay="300">Information Architecture & Content Structuring</h5>
+                <h5>Information Architecture & Content Structuring</h5>
             </div>
             <p data-aos="fade-right" data-aos-delay="400">
                 Strategically planning the website structure, organizing content hierarchy, and defining logical section flow to ensure clarity, usability, and seamless navigation.
@@ -111,10 +113,10 @@
             </div>
 
             <!-- 2 -->
-            <div class="role-card">
+            <div class="role-card" data-aos="fade-right" data-aos-delay="500">
             <div class="role-title">
-                <span class="role-dot"></span>
-                <h5 data-aos="fade-right" data-aos-delay="500">Complete UI/UX Design</h5>
+                <span class="role-dot" ></span>
+                <h5>Complete UI/UX Design</h5>
             </div>
             <p data-aos="fade-right" data-aos-delay="600">
                 Designing a clean, modern, and user-focused interface with consistent typography, spacing, visual hierarchy, and intuitive user experience principles.
@@ -122,10 +124,10 @@
             </div>
 
             <!-- 3 -->
-            <div class="role-card">
+            <div class="role-card" data-aos="fade-right" data-aos-delay="700">
             <div class="role-title">
                 <span class="role-dot"></span>
-                <h5 data-aos="fade-right" data-aos-delay="700">Frontend Development using HTML, CSS, and JavaScript</h5>
+                <h5>Frontend Development using HTML, CSS, and JavaScript</h5>
             </div>
             <p data-aos="fade-right" data-aos-delay="800">
                 Building a fully responsive and performance-optimized frontend with structured semantic markup, modern styling techniques, and interactive functionality.
@@ -133,7 +135,7 @@
             </div>
 
             <!-- 4 -->
-            <div class="role-card">
+            <div class="role-card" data-aos="fade-right" data-aos-delay="900">
             <div class="role-title">
                 <span class="role-dot"></span>
                 <h5 data-aos="fade-right" data-aos-delay="900">SEO Implementation & Technical Optimization</h5>
@@ -144,10 +146,10 @@
             </div>
 
             <!-- 5 -->
-            <div class="role-card">
+            <div class="role-card" data-aos="fade-right" data-aos-delay="1100">
             <div class="role-title">
                 <span class="role-dot"></span>
-                <h5 data-aos="fade-right" data-aos-delay="1100">Performance Tuning & Asset Optimization</h5>
+                <h5>Performance Tuning & Asset Optimization</h5>
             </div>
             <p data-aos="fade-right" data-aos-delay="1200">
                 Optimizing images, reducing unnecessary scripts, improving loading speed, and refining code structure to achieve better performance scores.
@@ -155,7 +157,7 @@
             </div>
 
             <!-- 6 -->
-            <div class="role-card">
+            <div class="role-card" data-aos="fade-right" data-aos-delay="1300">
             <div class="role-title">
                 <span class="role-dot"></span>
                 <h5 data-aos="fade-right" data-aos-delay="1300">Hosting Configuration & SSL Setup</h5>
@@ -166,7 +168,7 @@
             </div>
 
             <!-- 7 -->
-            <div class="role-card">
+            <div class="role-card" data-aos="fade-right" data-aos-delay="1500">
             <div class="role-title">
                 <span class="role-dot"></span>
                 <h5 data-aos="fade-right" data-aos-delay="1500">Domain Connection & Live Publishing</h5>
@@ -177,7 +179,7 @@
             </div>
 
             <!-- 8 -->
-            <div class="role-card">
+            <div class="role-card" data-aos="fade-right" data-aos-delay="1700">
             <div class="role-title">
                 <span class="role-dot"></span>
                 <h5 data-aos="fade-right" data-aos-delay="1700">Post-Launch Testing & Continuous Improvements</h5>
@@ -389,36 +391,62 @@
   <div class="cursor-core" id="cursorCore"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 800, once: true });
+
     const slider = document.querySelector(".slides");
-const slideItems = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
+    const slideItems = document.querySelectorAll(".slide");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
 
-let index = 0;
+    let index = 0;
 
-function updateSlider(){
-  slider.style.transform = `translateX(-${index * 100}%)`;
-}
+    function updateSlider() {
+      if (slider) {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+      }
+    }
 
-nextBtn.addEventListener("click", () => {
-  index = (index + 1) % slideItems.length;
-  updateSlider();
-});
+    if (nextBtn && prevBtn && slideItems.length) {
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % slideItems.length;
+        updateSlider();
+      });
 
-prevBtn.addEventListener("click", () => {
-  index = (index - 1 + slideItems.length) % slideItems.length;
-  updateSlider();
-});
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + slideItems.length) % slideItems.length;
+        updateSlider();
+      });
 
-/* Auto slide every 5 sec */
-setInterval(() => {
-  index = (index + 1) % slideItems.length;
-  updateSlider();
-}, 5000);
+      setInterval(() => {
+        index = (index + 1) % slideItems.length;
+        updateSlider();
+      }, 5000);
+    }
+
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    });
+
+    backToTop.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
   </script>
 </body>
 </html>
