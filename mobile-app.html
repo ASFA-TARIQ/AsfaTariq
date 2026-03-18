@@ -267,56 +267,62 @@
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, once: true });
+<script>
+  AOS.init({ duration: 800, once: true });
 
-window.addEventListener('load', () => {
-  AOS.refresh();
-});
-    const slider = document.querySelector(".slides");
-const slideItems = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
+  window.addEventListener("load", () => {
+    AOS.refresh();
+  });
 
-let index = 0;
+  const slider = document.querySelector(".slides");
+  const slideItems = document.querySelectorAll(".slide");
+  const nextBtn = document.querySelector(".next");
+  const prevBtn = document.querySelector(".prev");
 
-function updateSlider(){
-  slider.style.transform = `translateX(-${index * 100}%)`;
-}
+  let index = 0;
 
-nextBtn.addEventListener("click", () => {
-  index = (index + 1) % slideItems.length;
-  updateSlider();
-});
+  function updateSlider() {
+    if (slider) {
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }
+  }
 
-prevBtn.addEventListener("click", () => {
-  index = (index - 1 + slideItems.length) % slideItems.length;
-  updateSlider();
-});
+  if (slider && nextBtn && prevBtn && slideItems.length) {
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % slideItems.length;
+      updateSlider();
+    });
 
-/* Auto slide every 5 sec */
-setInterval(() => {
-  index = (index + 1) % slideItems.length;
-  updateSlider();
-}, 5000);
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + slideItems.length) % slideItems.length;
+      updateSlider();
+    });
+
+    setInterval(() => {
+      index = (index + 1) % slideItems.length;
+      updateSlider();
+    }, 5000);
+  }
 
   const backToTop = document.getElementById("backToTop");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.add("show");
-    } else {
-      backToTop.classList.remove("show");
-    }
-  });
-
-  backToTop.addEventListener("click", function (e) {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+  if (backToTop) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
     });
-  });
-  </script>
+
+    backToTop.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+</script>
 </body>
 </html>
